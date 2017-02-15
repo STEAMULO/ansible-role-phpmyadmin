@@ -1,9 +1,17 @@
 ---
 dependencies:
-  - geerlingguy.apache
-  - geerlingguy.mysql
-  - geerlingguy.php-mysql
-  - geerlingguy.php
+  - name: geerlingguy.apache
+    src: geerlingguy.apache
+    when: phpmyadmin_install_dependencies
+  - name: geerlingguy.mysql
+    src: geerlingguy.mysql
+    when: phpmyadmin_install_dependencies
+  - name: geerlingguy.php-mysql
+    src: geerlingguy.php-mysql
+    when: phpmyadmin_install_dependencies
+  - name: geerlingguy.php
+    src: geerlingguy.php
+    when: phpmyadmin_install_dependencies
 
 galaxy_info:
   author: geerlingguy
