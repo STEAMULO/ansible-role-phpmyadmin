@@ -10,4 +10,5 @@
     regexp: "^Include.+phpmyadmin.+$"
     line: "Include /etc/phpmyadmin/apache.conf"
     insertafter: "EOF"
+    when: "{{ phpmyadmin_include_conf_apache }}"
   notify: restart apache

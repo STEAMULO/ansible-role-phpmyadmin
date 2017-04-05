@@ -14,3 +14,5 @@ phpmyadmin_mysql_user: root
 phpmyadmin_mysql_password: "{{ mysql_root_password }}"
 
 phpmyadmin_install_dependencies: True
+
+phpmyadmin_include_conf_apache: False
